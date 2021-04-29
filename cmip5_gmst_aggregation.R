@@ -36,5 +36,10 @@ full_file <- rbindlist(aggd_clean, idcol = "id") %>%
     TRUE ~ "Other"
   ))
 
+full_nohist <- full_file %>%
+  dplyr::filter(!id %in% "historical")
+
 
 fwrite(full_file, "output/all_cmip5_models.csv")
+
+fwrite(full_nohist, "output/all_cmip5_models_rcp2685.csv")
