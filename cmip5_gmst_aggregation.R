@@ -37,4 +37,4 @@ full_file <- rbindlist(aggd_clean, idcol = "id") %>%
   ))
 
 
-write.csv(full_file, "output/all_cmip5_models.csv")
+fwrite(full_file, "output/all_cmip5_models.csv")
