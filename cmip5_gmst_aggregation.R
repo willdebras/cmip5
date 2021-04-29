@@ -37,7 +37,7 @@ full_file <- rbindlist(aggd_clean, idcol = "id") %>%
   ))
 
 full_nohist <- full_file %>%
-  dplyr::filter(!id %in% "historical")
+  dplyr::filter(!modelgroup %in% "historical")
 
 
 fwrite(full_file, "output/all_cmip5_models.csv")
