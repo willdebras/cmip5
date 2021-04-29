@@ -4,6 +4,8 @@ This repository was created as an easy-to-access mirror for CMIP5 (Coupled Model
 
 The repository holds data for all the CMIP climate models with monthly temperature. It contains the raw output of monthly simulated temperature data from the 422 climate simulations by the CMIP5 initiative with no bias adjustments.
 
+Each file contains 14 columns representing the year, the mean global surface temperature for each month of that year January to December, and the mean temperature of that year. The values represent the temperature in Kelvin.
+
 The data were pulled from the World Metropolitan Organization page:
 
 http://climexp.knmi.nl/CMIP5/Tglobal/index.cgi
